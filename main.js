@@ -1,4 +1,3 @@
-import './style.css';
 import QRCodeStyling from 'qr-code-styling';
 import { qrOptions } from './options';
 
