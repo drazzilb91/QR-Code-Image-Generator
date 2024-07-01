@@ -24,12 +24,14 @@ function main() {
   const containerQR = document.createElement('div');
   containerQR.className = 'img-thumbnail d-flex justify-content-center align-items-center';
   containerQR.id = 'qrCode';
+  generateQR('https://cdsra.org').append(containerQR); // Display a default QR code
 
   // Create an input text box for URL input
   const inputTextBox = document.createElement('input');
   inputTextBox.type = 'text'; // Corrected type from 'TextInput' to 'text'
   inputTextBox.className = 'form-control';
   inputTextBox.placeholder = 'Enter a CDSRA URL then press Enter or click Generate QR Code';
+
    
   // Attach the event listener
   inputTextBox.addEventListener('keypress', (e) => { 

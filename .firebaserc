@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "officiatingdb"
+  },
+  "targets": {
+    "officiatingdb": {
+      "hosting": {
+        "qrgeneratorapp": [
+          "qrgeneratorapp"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
