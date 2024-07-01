@@ -12,8 +12,8 @@ function generateQR(url) {
 }
 
 function isValidUrl(url) {
-  const domain = 'cdsra.org';
-  const regex = new RegExp(`^(https?:\\/\\/)?([\\w.-]+\\.)*${domain}\\/?.*$`, 'i');
+  const allowedDomains = ['forms.office.com', 'forms.gle', 'cdsra.org','form.jotform.com'];
+  const regex = new RegExp(`^(https?:\\/\\/)?([\\w.-]+\\.)*(${allowedDomains.join('|')})\\/?.*$`, 'i');
   return regex.test(url);
 }
 
@@ -63,7 +63,7 @@ function main() {
       if (!document.querySelector('.invalid-feedback')) { // Prevent multiple error messages
         const feedback = document.createElement('div');
         feedback.className = 'invalid-feedback';
-        feedback.textContent = 'Please enter a valid URL. Only URLs from cdsra.org are allowed.';
+        feedback.textContent = 'Please enter a valid URL. Only URLs from the CDSRA are allowed.';
         inputTextBox.parentNode.insertBefore(feedback, inputTextBox.nextSibling);
       }
     } else {
