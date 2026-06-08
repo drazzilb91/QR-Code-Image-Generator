@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "firebase-tools": "^15.17.0",
+    "firebase-tools": "^15.19.1",
     "vite": "^6.4.2"
   },
   "dependencies": {
