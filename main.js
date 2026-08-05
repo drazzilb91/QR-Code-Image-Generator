@@ -11,7 +11,7 @@ function generateQR(url) {
 }
 
 function isValidUrl(url) {
-  const allowedDomains = ['forms.office.com', 'forms.gle', 'cdsra.org','form.jotform.com'];
+  const allowedDomains = ['forms\\.office\\.com', 'forms\\.gle', 'cdsra\\.org', 'form\\.jotform\\.com'];
   const regex = new RegExp(`^(https?:\\/\\/)?([\\w.-]+\\.)*(${allowedDomains.join('|')})\\/?.*$`, 'i');
   return regex.test(url);
 }
