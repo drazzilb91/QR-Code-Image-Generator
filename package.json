@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "firebase-tools": "^15.27.0",
-    "vite": "^8.2.1"
+    "vite": "^8.2.2"
   },
   "dependencies": {
     "qr-code-styling": "^1.9.2"
